@@ -22,6 +22,15 @@ valores */
 /* selector de id #
 #portafolio */
 
+/* 
+line-height para modificar el alto de linea
+font-size para modificar el tamaño de la fuente
+font-weight para modificar el tipo de fuente
+font-style para modificar el estilo de la fuente
+letter-spacing para modificar el espacio entre letras
+text-transform para transformar la fuente (mayusculas, minuculas, etc)
+text-decoration para moodificar la decoración de la fuente */
+
 body {
   font-family: "Source Sans Pro";
   background: rgba(11, 88, 175, 0.973);
@@ -33,4 +42,14 @@ h4,
 h5,
 h6 {
   font-family: "FjallaOne";
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  /* text-transform: uppercase;
+  text-decoration: underline; */
 }
