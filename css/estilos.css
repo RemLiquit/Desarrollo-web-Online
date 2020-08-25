@@ -6,10 +6,10 @@ valores */
 
 /* selector de etiqueta header - section - article -nav  */
 
-header {
+/* header {
   color: rgb(38, 126, 97);
   background: rgb(170, 122, 122);
-}
+} */
 
 /* selector descendente  */
 
@@ -23,5 +23,14 @@ header {
 #portafolio */
 
 body {
+  font-family: "Source Sans Pro";
   background: rgba(11, 88, 175, 0.973);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "FjallaOne";
 }
