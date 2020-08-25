@@ -1,3 +1,28 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+/* selector de etiqueta header - section - article -nav  */
+
+header {
+  color: rgb(38, 126, 97);
+  background: rgb(218, 6, 6);
+}
+
+/* selector descendente  */
+
+/* body header div nav ol li a */
+
+/* selector de clase . */
+
+.link {
+}
+
+/* selector de id #
+#portafolio */
+
 body {
-  background: red;
+  background: rgba(11, 88, 175, 0.973);
 }
