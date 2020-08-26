@@ -49,6 +49,7 @@ celeste =  #026fff;
 body {
   font-family: "Source Sans Pro";
   background: rgba(11, 88, 175, 0.973);
+  margin: 0;
 }
 h1,
 h2,
@@ -103,7 +104,16 @@ h1 strong {
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px; */
+  margin: 10px;
   margin-bottom: 15px;
+
+  padding: 20px;
+
+  background: white;
+}
+
+.portafolio {
+  background: #fafafa;
 }
 
 .project-details {
