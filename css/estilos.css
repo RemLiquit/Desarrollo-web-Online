@@ -31,6 +31,21 @@ letter-spacing para modificar el espacio entre letras
 text-transform para transformar la fuente (mayusculas, minuculas, etc)
 text-decoration para moodificar la decoración de la fuente */
 
+/* 
+background-color para agregar unn color de fondo
+color para agregar un color al texto
+text-decoration para modificar la decoración del texto
+background-image para agregar una imagen de fondo
+background-size para modificar el tamaño del background asignado
+background-repeat para modificar la repetición del backgound asignado
+background-position para modificar la posición del bakground asignado */
+
+/* gris oscuro = #1d252c:
+gris claro = #626262;
+background gris = #1b2127; 
+celeste =  #026fff;
+*/
+
 body {
   font-family: "Source Sans Pro";
   background: rgba(11, 88, 175, 0.973);
@@ -50,12 +65,22 @@ h1 {
   font-size: 40px;
   line-height: 1.5;
   letter-spacing: -0.2px;
+  color: white;
   /* text-transform: uppercase;
   text-decoration: underline; */
 }
 
+h1 strong {
+  color: #026fff;
+}
+
 .hero {
   height: 300px;
+  background-image: url(../images/hero.jpg);
+  background-color: #1b2127;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
 
 .project-details {
@@ -64,4 +89,14 @@ h1 {
 
 .project-imageContainer {
   width: 500px;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
 }
