@@ -4,59 +4,39 @@ declaraciones
 propiedades
 valores */
 
-/* selector de etiqueta header - section - article -nav  */
-
+/* seletor de etiqueta  header - section - article - nav */
 /* header {
-  color: rgb(38, 126, 97);
-  background: rgb(170, 122, 122);
+  background: pink;
+  color: red
 } */
 
 /* selector descendente  */
-
-/* body header div nav ol li a */
+/* body header div nav ol li a  */
 
 /* selector de clase . */
 
-/* .link {} */
+/* .link */
 
-/* selector de id #
-#portafolio */
+/* selector de id # */
+/* #portafolio */
 
-/* 
-line-height para modificar el alto de linea
-font-size para modificar el tamaño de la fuente
-font-weight para modificar el tipo de fuente
-font-style para modificar el estilo de la fuente
-letter-spacing para modificar el espacio entre letras
-text-transform para transformar la fuente (mayusculas, minuculas, etc)
-text-decoration para moodificar la decoración de la fuente */
-
-/* 
-background-color para agregar unn color de fondo
-color para agregar un color al texto
-text-decoration para modificar la decoración del texto
-background-image para agregar una imagen de fondo
-background-size para modificar el tamaño del background asignado
-background-repeat para modificar la repetición del backgound asignado
-background-position para modificar la posición del bakground asignado */
-
-/* gris oscuro = #1d252c:
-gris claro = #626262;
-background gris = #1b2127; 
-celeste =  #026fff;
-*/
+/* gris oscuro = #1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+/* celeste = #026fff */
 
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "FjallaOne";
+  font-family: "Fjalla One", sans-serif;
   font-weight: normal;
   /* font-style: italic; */
 }
@@ -66,99 +46,90 @@ h1 {
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: white;
-  /* margin: top right bottom left; */
   margin: 0;
-  /* margin: 100px 500px 70px 30px; */
-  /* text-transform: uppercase;
-  text-decoration: underline; */
+  /* margin: 100px 150px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
 }
-
 h1 strong {
   color: #026fff;
 }
-
-h2 strong {
+h2 {
   color: #026fff;
   text-transform: uppercase;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 24px;
   margin-bottom: 40px;
 }
 
 .hero {
   height: 300px;
-  /* background-image: url(../images/hero.jpg); */
+  /* background-image: url('../images/hero.jpg'); */
   background-color: #1b2127;
-  /* background-size: ancho alto; */
-  /* background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right; */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hero-image {
   object-fit: cover;
 }
 
-.project {
-  /* border-top: tamaño estilo tipo ; */
-  /* border-top: 10px solid cadetblue;
-  border-bottom: 10px solid cadetblue;
-  border-left: 10px solid greenyellow;
-  border-right: 10px solid greenyellow; */
-
-  /* border-color: rgb(182, 182, 134);
-  border-width: 10px;
-  border-style: solid;  */
-
-  border: 1px solid gray;
-  border-radius: 10px;
-  /* border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px; */
-  /* margin: 10px; */
-  margin-bottom: 15px;
-
-  padding: 20px;
-
-  background: white;
-
-  /* box-sizing: content-box; */
-  /* 
-display: inline;
-display: block;
-display: flex; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portafolio {
+.portfolio {
   background: #fafafa;
   padding: 20px;
+  /* background: red; */
 }
+
+.project {
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* color: blue; */
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* margin-right
+  margin-left 
+  margin-top */
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
 
 .project-title {
   font-size: 30px;
   margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.project-course,
-.project-date,
-.project-url {
-  margin: 20px 0;
-}
-
-.project-description {
-  font-size: 20px;
-}
-
-.project strong {
-  font-family: "FjallaOne";
+  margin-bottom: 10px;
 }
 
 .project-details {
@@ -173,35 +144,9 @@ display: flex; */
   background-color: #1b2127;
   color: white;
   display: flex;
+  height: 70px;
+  align-items: center;
   justify-content: space-between;
-  height: 90px;
-  align-items: center;
-}
-
-.menu {
-  height: inherit;
-}
-
-.header ol {
-  display: flex;
-  height: inherit;
-}
-
-.header ol li {
-  height: inherit;
-}
-
-.header a {
-  color: white;
-  text-decoration: none;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-}
-
-figure {
-  margin: 0;
 }
 
 ol,
@@ -211,29 +156,50 @@ ul {
   list-style: none;
 }
 
-/* .flexbox {
+figure {
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  height: inherit;
+}
+.header ol {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-wrap: nowrap; 
-
-  justify-content:center;
-
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
+  display: flex;
   align-items: center;
-  
-} */
+  height: inherit;
+  padding: 0 10px;
+}
 
-/* .box {
-  width: 200px;
-  height: 200px;
+.flexbox {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
   border: 1px solid red;
 
   flex-shrink: 0;
-} */
+}
 
 .footer {
-  background-color: #1b2127;
   color: white;
+  background-color: #1b2127;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -251,24 +217,22 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-
 .event-list-title {
-  margin-left: 10px;
+  margin-left: 20px;
 }
-
 .event {
   margin: 10px;
+  width: 480px;
   flex-shrink: 0;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 20px;
   background: #f4fbff;
 }
 .event img {
-  width: 580px;
+  width: 480px;
   height: 200px;
   object-fit: cover;
 }
-
 .event-detail {
   margin: 20px 40px;
   margin-top: -40px;
@@ -277,7 +241,6 @@ ul {
   padding: 20px;
   text-align: center;
 }
-
 .event-description {
   text-align: left;
 }
@@ -310,25 +273,25 @@ ul {
   background-size: 50px 50px;
 }
 
-.twitter {
-  background-image: url(../images/twitter.svg);
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
 }
-.facebook {
-  background-image: url(../images/facebook.svg);
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
 }
-.github {
-  background-image: url(../images/github.svg);
+.social-link.github {
+  background-image: url("../images/github.svg");
 }
-.instagram {
-  background-image: url(../images/instagram.svg);
+.social-link.instagram {
+  background-image: url("../images/instagram.svg");
 }
 
 .form-email input {
-  border-color: grey;
-  padding: 1px 20px 10px 25px;
+  border-color: gray;
   border-style: solid;
   border-radius: 5px;
-  background-image: url(../images/envelope.svg);
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -337,17 +300,16 @@ ul {
 
 .form-email button {
   display: block;
-  margin-top: 5px;
   background: transparent;
   color: white;
   padding: 10px 0;
   border-radius: 5px;
   width: 100px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .form-email h3 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
