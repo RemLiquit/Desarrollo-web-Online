@@ -12,203 +12,224 @@
   </head>
   <body>
     <header class="header">
-      <figure class="logo">
-        <img src="images/logo.png" height="50px" alt="Logo de https://" />
-      </figure>
-      <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#portafolio">Portafolio</a>
-          </li>
-          <li>
-            <a class="link" href="#experiencia">Esperiencia</a>
-          </li>
-          <li>
-            <a class="link" href="#trabajemos">Trabajemos juntos</a>
-          </li>
-        </ol>
-      </nav>
+      <div class="container">
+        <figure class="logo">
+          <img src="images/logo.png" height="50px" alt="Logo de https://" />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#experiencia">Experiencia</a>
+            </li>
+            <li>
+              <a class="link" href="#contact">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
     <section class="hero">
-      <h1>
-        Hola! Soy <strong>Leonidas Esteban</strong> <br />Desarrollador Web en
-        <strong>Javascript</strong>
-      </h1>
-      <!-- <img
-        src="images/hero.jpg"
-        width="500"
-        height="300"
-        alt="Imagen principal del sitio"
-      /> -->
+      <div class="container">
+        <h1>
+          Hola! Soy <strong>Leonidas Esteban</strong> <br />Desarrollador Web en
+          <strong>Javascript</strong>
+        </h1>
+        <img
+          class="hero-image"
+          src="images/hero.jpg"
+          width="500"
+          height="300"
+          alt="Imagen principal del sitio"
+        />
+      </div>
     </section>
     <section id="portafolio" class="portafolio">
-      <h2><strong> Portafolio (Proyectos destacados) </strong></h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platzi Video</h3>
-          <h6 class="project-course">React Native / React</h6>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> 01/07/2017</small>
-          </p>
-          <p class="project-url">
-            <small><strong>Puedes verlo en: </strong>www.platzi.com</small>
-          </p>
-          <p class="project-description">
-            Una plataforma de enseñanza guiado al aprendizaje en line con
-            multiples cursos en diferentes ramas
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img
-            class="project-image"
-            src="images/platzi-video-react-native.png"
-            alt="Proyecto curso React Nativa"
-            width="400"
-          />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platzi Video</h3>
-          <h6 class="project-course">React Native / React</h6>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> 01/07/2017</small>
-          </p>
-          <p class="project-url">
-            <small><strong>Puedes verlo en: </strong>www.platzi.com</small>
-          </p>
-          <p class="project-description">
-            Una plataforma de enseñanza guiado al aprendizaje en line con
-            multiples cursos en diferentes ramas
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img
-            class="project-image"
-            src="images/platzi-video-react-native.png"
-            alt="Proyecto curso React Nativa"
-            width="400"
-          />
-        </figure>
-      </article>
+      <div class="container">
+        <h2><strong> Portafolio (Proyectos destacados) </strong></h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/07/2017</small>
+            </p>
+            <p class="project-url">
+              <small><strong>Puedes verlo en: </strong>www.platzi.com</small>
+            </p>
+            <p class="project-description">
+              Una plataforma de enseñanza guiado al aprendizaje en line con
+              multiples cursos en diferentes ramas
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/platzi-video-react-native.png"
+              alt="Proyecto curso React Nativa"
+              width="400"
+            />
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 01/07/2017</small>
+            </p>
+            <p class="project-url">
+              <small><strong>Puedes verlo en: </strong>www.platzi.com</small>
+            </p>
+            <p class="project-description">
+              Una plataforma de enseñanza guiado al aprendizaje en line con
+              multiples cursos en diferentes ramas
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/platzi-video-react-native.png"
+              alt="Proyecto curso React Nativa"
+              width="400"
+            />
+          </figure>
+        </article>
+      </div>
     </section>
-    <h2 class="event-list-title">Mas sobre mi experiencia</h2>
-    <section id="eventos" class="event-list">
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img
-            class="event-image"
-            src="images/platzi-conf.jpg"
-            width="300"
-            height="200"
-          />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">PlatziConf</h3>
-          <p class="event-description">
-            Un evento grande sobre la gente que quiere aprender mas de internet.
-          </p>
-          <a
-            class="event-url"
-            href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
-            target="_blank"
-            >Ver platica</a
-          >
-        </div>
-        <figure></figure>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img
-            class="event-image"
-            src="images/platzi-conf.jpg"
-            width="300"
-            height="200"
-          />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">PlatziConf</h3>
-          <p class="event-description">
-            Un evento grande sobre la gente que quiere aprender mas de internet.
-          </p>
-          <a
-            class="event-url"
-            href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
-            target="_blank"
-            >Ver platica</a
-          >
-        </div>
-        <figure></figure>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img
-            class="event-image"
-            src="images/platzi-conf.jpg"
-            width="300"
-            height="200"
-          />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">PlatziConf</h3>
-          <p class="event-description">
-            Un evento grande sobre la gente que quiere aprender mas de internet.
-          </p>
-          <a
-            class="event-url"
-            href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
-            target="_blank"
-            >Ver platica</a
-          >
-        </div>
-        <figure></figure>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img
-            class="event-image"
-            src="images/platzi-conf.jpg"
-            width="300"
-            height="200"
-          />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">PlatziConf</h3>
-          <p class="event-description">
-            Un evento grande sobre la gente que quiere aprender mas de internet.
-          </p>
-          <a
-            class="event-url"
-            href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
-            target="_blank"
-            >Ver platica</a
-          >
-        </div>
-        <figure></figure>
-      </article>
+    <div class="container">
+      <h2 class="event-list-title">Mas sobre mi experiencia</h2>
+    </div>
+    <section id="experiencia" class="event-list">
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/platzi-conf.jpg"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf</h3>
+            <p class="event-description">
+              Un evento grande sobre la gente que quiere aprender mas de
+              internet.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver platica</a
+            >
+          </div>
+          <figure></figure>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/platzi-conf.jpg"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf</h3>
+            <p class="event-description">
+              Un evento grande sobre la gente que quiere aprender mas de
+              internet.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver platica</a
+            >
+          </div>
+          <figure></figure>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/platzi-conf.jpg"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf</h3>
+            <p class="event-description">
+              Un evento grande sobre la gente que quiere aprender mas de
+              internet.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver platica</a
+            >
+          </div>
+          <figure></figure>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/platzi-conf.jpg"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf</h3>
+            <p class="event-description">
+              Un evento grande sobre la gente que quiere aprender mas de
+              internet.
+            </p>
+            <a
+              class="event-url"
+              href="https://www.youtube.com/watch?v=BIS7cWGgJg0"
+              target="_blank"
+              >Ver platica</a
+            >
+          </div>
+          <figure></figure>
+        </article>
+      </div>
     </section>
-    <section id="trabajemos" class="contact">
-      <form action="/suscription/" class="form-email">
-        <h3>¿Creamos algo juntos?</h3>
-        <input type="text" placeholder="Déjanos tu email" id="email" />
-        <button>Enviar</button>
-      </form>
-      <div class="social">
-        <a href="" class="social-link twitter"></a>
-        <a href="" class="social-link facebook"></a>
-        <a href="" class="social-link github"></a>
-        <a href="" class="social-link instagram"></a>
+    <section id="contact" class="contact">
+      <div class="container">
+        <form action="/suscription" class="form-email">
+          <h3>¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjanos tu email" id="email" />
+          <button>Enviar</button>
+        </form>
+        <div class="social">
+          <a href="" class="social-link twitter"></a>
+          <a href="" class="social-link facebook"></a>
+          <a href="" class="social-link github"></a>
+          <a href="" class="social-link instagram"></a>
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <div>
-        <p>
-          Curso de desarrollo online 2018
-          <img src="/images/platzi.png" width="80" alt="plati" />
-        </p>
-      </div>
-      <div>
-        <p>Designe with help Laonidas Platzi <a href="https://">@dreator</a></p>
+      <div class="container">
+        <div>
+          <p>
+            Curso de desarrollo online 2018
+            <img src="/images/platzi.png" width="80" alt="plati" />
+          </p>
+        </div>
+        <div>
+          <p>
+            Designe with help Laonidas Platzi <a href="https://">@dreator</a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
